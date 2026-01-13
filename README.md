@@ -6,7 +6,11 @@ It combines Infrastructure-as-Code (IaC) with a simple deployment workflow, ensu
 
 ---
 
-## 🏗️ Architecture
+## Architecture Diagram
+![Architecture Diagram](./azure-terraform-func-qr-app.png)
+
+
+## 🏗️ Architecture Details
 - **Terraform** provisions:
   - Resource Group
   - Storage Account (for Function state and triggers)
