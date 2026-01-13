@@ -29,6 +29,9 @@ resource "azurerm_linux_function_app" "fa" {
   storage_account_access_key = azurerm_storage_account.sa.primary_access_key
 
   site_config {
+    always_on = true
+    cors { allowed_origins = ["https://portal.azure.com"] }
+    
     application_stack {
       node_version = "22"
     }
